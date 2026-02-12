@@ -85,7 +85,7 @@ export const Hero: React.FC = () => {
 
             <div className="absolute inset-4 overflow-hidden rounded-full border-4 border-white/10">
               <img
-                src="public/profile-pic.jpg"
+                src="../../../public/profile-pic.jpg"
                 alt="Samy Mehdid"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />

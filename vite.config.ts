@@ -1,9 +1,13 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
-export default defineConfig({
-  base: "/raynexfolio/",
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default defineConfig(({ mode }) => ({
+  base: mode === 'production' ? "/raynexfolio/" : "/",
   plugins: [react()],
   resolve: {
     alias: {
@@ -15,5 +19,5 @@ export default defineConfig({
     strictPort: true,
     host: true,
     allowedHosts: true,
-  }
-});
+  },
+}));
