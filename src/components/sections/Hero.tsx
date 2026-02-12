@@ -72,20 +72,20 @@ export const Hero: React.FC = () => {
         >
           <div className="relative w-80 h-80 md:w-[450px] md:h-[450px]">
             {/* Animated Circles */}
-            <motion.div 
+            <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
               className="absolute inset-0 border-2 border-dashed border-primary/30 rounded-full"
             />
-            <motion.div 
+            <motion.div
               animate={{ rotate: -360 }}
               transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
               className="absolute inset-8 border-2 border-dashed border-accent/20 rounded-full"
             />
-            
+
             <div className="absolute inset-4 overflow-hidden rounded-full border-4 border-white/10">
-              <img 
-                src="../../../public/profile-pic.jpg" 
+              <img
+                src="public/profile-pic.jpg"
                 alt="Samy Mehdid"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
