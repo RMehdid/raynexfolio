@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "about": "Über mich",
+    "experience": "Erfahrung",
+    "projects": "Projekte",
+    "certificates": "Zertifikate",
+    "skills": "Fähigkeiten",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin",
+    "role": "iOS Software-Entwickler",
+    "description": "Entwicklung eleganter, leistungsstarker mobiler Erlebnisse mit Swift und SwiftUI. Komplexe Ideen in nahtlose Nutzerreisen verwandeln.",
+    "cta": "Kontakt aufnehmen"
+  },
+  "experience": {
+    "title": "Berufserfahrung",
+    "intern": "Software-Ingenieur Praktikant",
+    "associate": "Assoziierter Ingenieur",
+    "developer": "iOS-Entwickler"
+  },
+  "projects": {
+    "title": "Ausgewählte Projekte",
+    "view_project": "Projekt ansehen"
+  },
+  "skills": {
+    "title": "Technische Fähigkeiten"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie mich",
+    "description": "Ich bin immer offen für Gespräche über neue Projekte, kreative Ideen oder Möglichkeiten, Teil Ihrer Visionen zu sein.",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "send": "Nachricht senden"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "about": "À propos",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "certificates": "Certifications",
+    "skills": "Compétences",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "role": "Ingénieur Logiciel iOS",
+    "description": "Conception d'expériences mobiles élégantes et performantes avec Swift et SwiftUI. Transformer des idées complexes en parcours utilisateurs fluides.",
+    "cta": "Me contacter"
+  },
+  "experience": {
+    "title": "Expérience Professionnelle",
+    "intern": "Stagiaire Ingénieur Logiciel",
+    "associate": "Ingénieur Associé",
+    "developer": "Développeur iOS"
+  },
+  "projects": {
+    "title": "Projets Phares",
+    "view_project": "Voir le Projet"
+  },
+  "skills": {
+    "title": "Compétences Techniques"
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "description": "Je suis toujours ouvert à discuter de nouveaux projets, d'idées créatives ou d'opportunités de faire partie de vos visions.",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "send": "Envoyer le Message"
+    }
+  }
+}
