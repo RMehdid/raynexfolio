@@ -36,7 +36,7 @@ export const Navbar: React.FC = () => {
           animate={{ opacity: 1, x: 0 }}
           className="text-xl font-bold tracking-tighter"
         >
-          SAMY<span className="text-primary">.</span>DEV
+          raynex<span className="text-primary">.</span>dev
         </motion.div>
 
         {/* Desktop Nav */}

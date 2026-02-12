@@ -52,7 +52,7 @@ export const Hero: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-6">
-            <a href="#" className="p-3 glass rounded-full hover:text-primary transition-all">
+            <a href="https://github.com/RMehdid" target='_blank' className="p-3 glass rounded-full hover:text-primary transition-all">
               <Github size={20} />
             </a>
             <a href="https://linkedin.com/in/mehdid-samy-abderraouf" className="p-3 glass rounded-full hover:text-primary transition-all">
@@ -85,7 +85,7 @@ export const Hero: React.FC = () => {
             
             <div className="absolute inset-4 overflow-hidden rounded-full border-4 border-white/10">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" 
+                src="../../../public/profile-pic.jpg" 
                 alt="Samy Mehdid"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
