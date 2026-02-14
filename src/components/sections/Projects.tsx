@@ -35,7 +35,7 @@ export const Projects: React.FC = () => {
     {
       title: "CageLight",
       description: "University project with FC Augsburg. ML model (YOLO11n) for player sprint assessment and scoring.",
-      image: "public/cagelight.png",
+      image: "public/CageLight.jpeg",
       tags: ["Machine Learning", "Python", "YOLO11", "Computer Vision"],
       type: "academic",
       link: "#"
@@ -43,7 +43,7 @@ export const Projects: React.FC = () => {
     {
       title: "Culterra",
       description: "Interactive mobile app for cultural insights, offering authentic, locally-sourced information to explore cultures worldwide.",
-      image: "public/culterra.png",
+      image: "public/Culterra.jpeg",
       tags: ["Flutter", "Firebase", "Cross-platform", "Figma"],
       type: "academic",
       link: "#"
@@ -51,7 +51,7 @@ export const Projects: React.FC = () => {
     {
       title: "Pyramid Firmenkontaktmesse",
       description: "Official web portal for one of Germany’s largest career fairs. Built responsive Vue.js components and job board.",
-      image: "public/pyramid.png",
+      image: "public/Pyramid.jpeg",
       tags: ["Vue.js", "Web Development", "Agile", "Vuex"],
       type: "professional",
       link: "#"
@@ -59,7 +59,7 @@ export const Projects: React.FC = () => {
     {
       title: "Weelz",
       description: "Cutting-edge car rental service application revolutionizing interaction between car owners and drivers.",
-      image: "public/weelz.png",
+      image: "public/Weelz.jpeg",
       tags: ["OOP", "MongoDB", "Swift", "Backend"],
       type: "personal",
       link: "#"
@@ -67,7 +67,7 @@ export const Projects: React.FC = () => {
     {
       title: "iDrive",
       description: "Car rental service application facilitating interaction between owners and drivers with proximity-based searches.",
-      image: "public/idrive.png",
+      image: "public/iDrive.jpeg",
       tags: ["Design Patterns", "Swift", "CoreLocation", "iOS"],
       type: "personal",
       link: "#"
@@ -75,7 +75,7 @@ export const Projects: React.FC = () => {
     {
       title: "Cenify",
       description: "Feature-rich movie catalog app leveraging the IMDb API to explore and discover vast collections of films.",
-      image: "public/cenify.png",
+      image: "public/Cenify.png",
       tags: ["MVVM", "Swift", "IMDb API", "iOS"],
       type: "personal",
       link: "#"
@@ -83,7 +83,7 @@ export const Projects: React.FC = () => {
     {
       title: "MyThesis",
       description: "Human-Machine interaction project built using JavaSwing for academic thesis at Boumerdes University.",
-      image: "public/mythesis.png",
+      image: "public/MyThesis.jpeg",
       tags: ["Java", "Java Swing", "HCI", "UX"],
       type: "academic",
       link: "#"
@@ -91,7 +91,7 @@ export const Projects: React.FC = () => {
     {
       title: "iVape",
       description: "Vape Store iOS app with catalog details, sweetness levels, and a VG/PG calculator using Firebase.",
-      image: "public/ivape.png",
+      image: "public/iVape.png",
       tags: ["SwiftUI", "Firebase", "eCommerce", "iOS"],
       type: "personal",
       link: "#"
@@ -107,7 +107,7 @@ export const Projects: React.FC = () => {
     {
       title: "ParallaxKit",
       description: "Swift library for creating engaging parallax effects in iOS applications, focused on dependency injection.",
-      image: "public/parallaxkit.png",
+      image: "public/parallax.png",
       tags: ["Dependency Injection", "Swift", "Library", "Animations"],
       type: "personal",
       link: "#"
@@ -115,7 +115,7 @@ export const Projects: React.FC = () => {
     {
       title: "SwipableButton",
       description: "Customizable SwiftUI slide button view for engaging unlock actions in iOS and macOS apps.",
-      image: "public/swipablebutton.png",
+      image: "public/swipable-button.png",
       tags: ["SwiftUI", "Reusable Component", "Animations", "UI/UX"],
       type: "professional",
       link: "#"
