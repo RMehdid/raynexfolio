@@ -65,22 +65,6 @@ export const Projects: React.FC = () => {
       link: "#"
     },
     {
-      title: "Arbin Driver",
-      description: "Professional driver application for the Arbin ecosystem, focused on efficiency and real-time navigation.",
-      image: "public/arbin-driver.png",
-      tags: ["Design Patterns", "Version Control", "Real-time", "iOS"],
-      type: "professional",
-      link: "#"
-    },
-    {
-      title: "Arbin Rider",
-      description: "Consumer-facing application for the Arbin ride-sharing service, featuring seamless booking and tracking.",
-      image: "public/arbin-rider.png",
-      tags: ["Design Patterns", "REST APIs", "MapKit", "iOS"],
-      type: "professional",
-      link: "#"
-    },
-    {
       title: "iDrive",
       description: "Car rental service application facilitating interaction between owners and drivers with proximity-based searches.",
       image: "public/idrive.png",
