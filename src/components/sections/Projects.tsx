@@ -8,24 +8,24 @@ export const Projects: React.FC = () => {
 
   const projects = [
     {
-      title: "Jira Metrics Dashboard",
+      title: "FlowRadar",
       description: "A comprehensive dashboard for tracking Jira metrics, built during the Adesso SE internship to meet specific client requirements.",
-      image: "https://images.unsplash.com/photo-1551288049-bbda48658a7d?q=80&w=2070&auto=format&fit=crop",
-      tags: ["React", "Data Visualization", "API Integration"],
+      image: "public/adesso.png",
+      tags: ["Angular", "Data Visualization", "API Integration"],
       link: "#"
     },
     {
-      title: "Yassir Consumer App",
+      title: "Yassir",
       description: "Server-independent iOS application using MongoDB Device-Sync, reducing server load by 40% and improving offline capabilities.",
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2070&auto=format&fit=crop",
+      image: "public/yassir.png",
       tags: ["SwiftUI", "MongoDB", "Device-Sync", "iOS"],
       link: "#"
     },
     {
-      title: "Arbin Startup App",
-      description: "High-growth mobile application that gained over 10,000 users in its first week. Focused on performance and user retention.",
-      image: "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?q=80&w=2070&auto=format&fit=crop",
-      tags: ["Swift", "Websockets", "Growth", "iOS"],
+      title: "Arbin",
+      description: "two High-growth mobile application that gained over 10,000 users in its first week. Focused on performance and user retention.",
+      image: "public/arbin.png",
+      tags: ["Swift", "Websockets", "iOS", "User Location", "Firebase", "REST APIs"],
       link: "#"
     }
   ];
@@ -59,8 +59,8 @@ export const Projects: React.FC = () => {
               className="group glass rounded-[2rem] overflow-hidden hover:border-primary/50 transition-all flex flex-col"
             >
               <div className="relative h-64 overflow-hidden">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
@@ -73,13 +73,13 @@ export const Projects: React.FC = () => {
                   ))}
                 </div>
               </div>
-              
+
               <div className="p-8 flex-1 flex flex-col">
                 <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">{project.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-8 flex-1">
                   {project.description}
                 </p>
-                
+
                 <div className="flex items-center justify-between pt-6 border-t border-white/5 mt-auto">
                   <a href={project.link} className="flex items-center gap-2 text-sm font-bold hover:text-primary transition-all">
                     {t('projects.view_project')} <ExternalLink size={16} />
