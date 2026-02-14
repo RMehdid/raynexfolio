@@ -8,49 +8,49 @@ export const Certificates: React.FC = () => {
 
   const certificates = [
     {
-      title: "Supervised Machine Learning: Regression and Classification",
+      title: t('certificates.items.ml.title'),
       issuer: "Coursera",
       date: "Feb 2024",
       logo: "public/logos/certificates/coursera.png",
       link: "https://www.coursera.org/account/accomplishments/verify/A5MKRVBJFW8H"
     },
     {
-      title: "Software Design: Modeling with UML",
+      title: t('certificates.items.uml.title'),
       issuer: "LinkedIn",
       date: "Dec 2023",
       logo: "public/logos/certificates/linkedin.png",
       link: "https://www.linkedin.com/learning/certificates/1b644cfd477623be07b2bf1cfc3b0ae185dc235e96b6b839fbca812d8a4c335c"
     },
     {
-      title: "iOS 16 Development Essential Training",
+      title: t('certificates.items.ios16.title'),
       issuer: "LinkedIn",
       date: "Dec 2023",
       logo: "public/logos/certificates/linkedin.png",
       link: "https://www.linkedin.com/learning/certificates/48150ac55f26d155d28580f4765cc66cdde50f905d0850de71c41509b322cdae"
     },
     {
-      title: "Meta - Advanced Programming in Swift",
+      title: t('certificates.items.swift.title'),
       issuer: "Meta",
       date: "Sep 2023",
       logo: "public/logos/certificates/meta.png",
       link: "https://www.coursera.org/account/accomplishments/certificate/HCA32GN9YM79"
     },
     {
-      title: "iOS & Swift - MVVM, Combine, SnapKit, Snapshot/UI/Unit Tests",
+      title: t('certificates.items.ios_advanced.title'),
       issuer: "Udemy",
       date: "Aug 2023",
       logo: "public/logos/certificates/udemy.png",
       link: "https://www.udemy.com/certificate/UC-95f7deb0-1494-4827-bfa9-81ac10c352cc/"
     },
     {
-      title: "Server Side Swift Using Vapor 4 in iOS",
+      title: t('certificates.items.vapor.title'),
       issuer: "Udemy",
       date: "Mar 2023",
       logo: "public/logos/certificates/udemy.png",
       link: "https://www.udemy.com/certificate/UC-de47978a-c8c5-4e4b-b92c-2de00176561e/"
     },
     {
-      title: "Build iOS Apps with SwiftUI Skill Path",
+      title: t('certificates.items.swiftui.title'),
       issuer: "Codecademy",
       date: "Mar 2021",
       logo: "public/logos/certificates/codecademy.png",
