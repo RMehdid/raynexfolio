@@ -21,7 +21,12 @@
   },
   "projects": {
     "title": "المشاريع المميزة",
-    "view_project": "عرض المشروع"
+    "view_project": "عرض المشروع",
+    "types": {
+      "professional": "مهني",
+      "personal": "شخصي",
+      "academic": "أكاديمي"
+    }
   },
   "skills": {
     "title": "المهارات التقنية"

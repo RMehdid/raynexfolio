@@ -21,7 +21,12 @@
   },
   "projects": {
     "title": "Projets Phares",
-    "view_project": "Voir le Projet"
+    "view_project": "Voir le Projet",
+    "types": {
+      "professional": "Professionnel",
+      "personal": "Personnel",
+      "academic": "Académique"
+    }
   },
   "skills": {
     "title": "Compétences Techniques"

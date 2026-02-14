@@ -12,6 +12,7 @@ export const Projects: React.FC = () => {
       description: "A comprehensive dashboard for tracking Jira metrics, built during the Adesso SE internship to meet specific client requirements.",
       image: "public/adesso.png",
       tags: ["Angular", "Data Visualization", "API Integration"],
+      type: "professional",
       link: "#"
     },
     {
@@ -19,6 +20,7 @@ export const Projects: React.FC = () => {
       description: "Server-independent iOS application using MongoDB Device-Sync, reducing server load by 40% and improving offline capabilities.",
       image: "public/yassir.png",
       tags: ["SwiftUI", "MongoDB", "Device-Sync", "iOS"],
+      type: "professional",
       link: "#"
     },
     {
@@ -26,6 +28,7 @@ export const Projects: React.FC = () => {
       description: "two High-growth mobile application that gained over 10,000 users in its first week. Focused on performance and user retention.",
       image: "public/arbin.png",
       tags: ["Swift", "Websockets", "iOS", "User Location", "Firebase", "REST APIs"],
+      type: "professional",
       link: "#"
     }
   ];

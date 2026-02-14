@@ -21,7 +21,12 @@
   },
   "projects": {
     "title": "Ausgewählte Projekte",
-    "view_project": "Projekt ansehen"
+    "view_project": "Projekt ansehen",
+    "types": {
+      "professional": "Beruflich",
+      "personal": "Persönlich",
+      "academic": "Akademisch"
+    }
   },
   "skills": {
     "title": "Technische Fähigkeiten"
