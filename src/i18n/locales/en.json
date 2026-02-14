@@ -17,7 +17,33 @@
     "title": "Work Experience",
     "intern": "Software Engineer Intern",
     "associate": "Associate Engineer",
-    "developer": "iOS Developer"
+    "developer": "iOS Developer",
+    "items": {
+      "adesso": {
+        "period": "Sep 2025 - Mar 2027",
+        "location": "Munich, Germany",
+        "description": [
+          "Rotation program, initiated a project from discovery to delivery",
+          "Collaborated with a team of interns to deliver an ext Jira Metrics dashboard with specific client requirements"
+        ]
+      },
+      "yassir": {
+        "period": "Feb 2024 - May 2024",
+        "location": "Algiers, Algeria",
+        "description": [
+          "Developed a server-independent iOS app using MongoDB Device-Sync, reducing server load by 40%",
+          "Balanced feature development and maintenance of native iOS modules for cross-platform apps"
+        ]
+      },
+      "arbin": {
+        "period": "Jul 2022 - Feb 2024",
+        "location": "Algiers, Algeria",
+        "description": [
+          "Developed a startup app, gaining 10,000 users in the first week",
+          "Collaborated with Product team to add 5+ features, boosting user retention by 18%"
+        ]
+      }
+    }
   },
   "projects": {
     "title": "Featured Projects",
@@ -28,7 +54,78 @@
       "academic": "Academic"
     },
     "see_all": "See all projects",
-    "show_featured": "Show featured projects"
+    "show_featured": "Show featured projects",
+    "items": {
+      "FlowRadar": {
+        "description": "A comprehensive dashboard for tracking Jira metrics, built during the Adesso SE internship to meet specific client requirements."
+      },
+      "Yassir": {
+        "description": "Server-independent iOS application using MongoDB Device-Sync, reducing server load by 40% and improving offline capabilities."
+      },
+      "Arbin": {
+        "description": "High-growth mobile application that gained over 10,000 users in its first week. Focused on performance and user retention."
+      },
+      "CageLight": {
+        "description": "University project with FC Augsburg. ML model (YOLO11n) for player sprint assessment and scoring."
+      },
+      "Culterra": {
+        "description": "Interactive mobile app for cultural insights, offering authentic, locally-sourced information to explore cultures worldwide."
+      },
+      "Pyramid": {
+        "title": "Pyramid Firmenkontaktmesse",
+        "description": "Official web portal for one of Germany’s largest career fairs. Built responsive Vue.js components and job board."
+      },
+      "Weelz": {
+        "description": "Cutting-edge car rental service application revolutionizing interaction between car owners and drivers."
+      },
+      "iDrive": {
+        "description": "Car rental service application facilitating interaction between owners and drivers with proximity-based searches."
+      },
+      "Cenify": {
+        "description": "Feature-rich movie catalog app leveraging the IMDb API to explore and discover vast collections of films."
+      },
+      "MyThesis": {
+        "description": "Human-Machine interaction project built using JavaSwing for academic thesis at Boumerdes University."
+      },
+      "iVape": {
+        "description": "Vape Store iOS app with catalog details, sweetness levels, and a VG/PG calculator using Firebase."
+      },
+      "LittleLemon": {
+        "title": "Little Lemon App",
+        "description": "Mobile application for browsing dinner menu offerings, developed as part of the Meta iOS development course."
+      },
+      "ParallaxKit": {
+        "description": "Swift library for creating engaging parallax effects in iOS applications, focused on dependency injection."
+      },
+      "SwipableButton": {
+        "description": "Customizable SwiftUI slide button view for engaging unlock actions in iOS and macOS apps."
+      }
+    }
+  },
+  "certificates": {
+    "items": {
+      "ml": {
+        "title": "Supervised Machine Learning: Regression and Classification"
+      },
+      "uml": {
+        "title": "Software Design: Modeling with UML"
+      },
+      "ios16": {
+        "title": "iOS 16 Development Essential Training"
+      },
+      "swift": {
+        "title": "Meta - Advanced Programming in Swift"
+      },
+      "ios_advanced": {
+        "title": "iOS & Swift - MVVM, Combine, SnapKit, Snapshot/UI/Unit Tests"
+      },
+      "vapor": {
+        "title": "Server Side Swift Using Vapor 4 in iOS"
+      },
+      "swiftui": {
+        "title": "Build iOS Apps with SwiftUI Skill Path"
+      }
+    }
   },
   "skills": {
     "title": "Technical Skills"
