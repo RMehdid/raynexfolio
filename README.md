@@ -1,59 +1,69 @@
-# Enhanced Vite React TypeScript Template
+# Samy Mehdid | iOS Software Engineer
 
-This template includes built-in detection for missing CSS variables between your Tailwind config and CSS files.
+A premium, high-performance portfolio website built with React, TypeScript, and Tailwind CSS. Featuring a refined glassmorphism design, multi-language support (English, Arabic, German, French), and a focus on visual excellence and meaningful interactions.
 
-## Features
+![Portfolio Preview](public/profile-pic.jpg)
 
-- **CSS Variable Detection**: Automatically detects if CSS variables referenced in `tailwind.config.cjs` are defined in `src/index.css`
-- **Enhanced Linting**: Includes ESLint, Stylelint, and custom CSS variable validation
-- **Shadcn/ui**: Pre-configured with all Shadcn components
-- **Modern Stack**: Vite + React + TypeScript + Tailwind CSS
+## 🚀 Key Features
 
-## Available Scripts
+- **🌐 Full Internationalization (i18n)**: Seamlessly localized into English, Arabic (RTL support), German, and French using `i18next`.
+- **✨ Premium UI/UX**: Modern glassmorphism aesthetic with specialized glowing effects, smooth micro-animations (Framer Motion), and a responsive layout.
+- **📱 Project Showcase**: Conditional link rendering and themed logos for professional, personal, and academic projects.
+- **🏆 Verified Credentials**: Themed certificates section with direct verification links and branded issuer logos.
 
-```bash
-# Run all linting (includes CSS variable check)
-npm run lint
+## 🛠️ Tech Stack
 
-# Check only CSS variables
-npm run check:css-vars
+- **Framework**: [React 18](https://reactjs.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Localization**: [i18next](https://www.i18next.com/)
 
-# Individual linting
-npm run lint:js    # ESLint
-npm run lint:css   # Stylelint
+## 📦 Project Structure
+
+```text
+src/
+├── components/          # Reusable UI components
+│   ├── layout/          # Navbar, Footer
+│   ├── sections/        # Hero, Experience, Projects, Certificates, etc.
+│   └── ui/              # Atom-level components
+├── i18n/                # Localization config and JSON locales
+├── hooks/               # Custom React hooks
+└── App.tsx              # Main application entry
 ```
 
-## CSS Variable Detection
+## 🛠️ Development
 
-The template includes a custom script that:
+### Prerequisites
 
-1. **Parses `tailwind.config.cjs`** to find all `var(--variable)` references
-2. **Parses `src/index.css`** to find all defined CSS variables (`--variable:`)
-3. **Cross-references** them to find missing definitions
-4. **Reports undefined variables** with clear error messages
+- Node.js (v20+ recommended)
+- npm or yarn
 
-### Example Output
+### Setup
 
-When CSS variables are missing:
-```
-❌ Undefined CSS variables found in tailwind.config.cjs:
-   --sidebar-background
-   --sidebar-foreground
-   --sidebar-primary
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-Add these variables to src/index.css
-```
+### Scripts
 
-When all variables are defined:
-```
-✅ All CSS variables in tailwind.config.cjs are defined
-```
+- `npm run dev`: Start development server
+- `npm run build`: Build for production
+- `npm run lint`: Run ESLint and CSS variable validation
+- `npm run preview`: Preview production build locally
 
-## How It Works
+## 📄 License
 
-The detection happens during the `npm run lint` command, which will:
-- Exit with error code 1 if undefined variables are found
-- Show exactly which variables need to be added to your CSS file
-- Integrate seamlessly with your development workflow
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-This prevents runtime CSS issues where Tailwind classes reference undefined CSS variables.
+---
+
+Built with ❤️ by [Samy Mehdid](https://github.com/RMehdid)
