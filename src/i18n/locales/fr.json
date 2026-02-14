@@ -26,7 +26,9 @@
       "professional": "Professionnel",
       "personal": "Personnel",
       "academic": "Académique"
-    }
+    },
+    "see_all": "Voir tous les projets",
+    "show_featured": "Afficher les projets phares"
   },
   "skills": {
     "title": "Compétences Techniques"

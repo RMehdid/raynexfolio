@@ -26,7 +26,9 @@
       "professional": "مهني",
       "personal": "شخصي",
       "academic": "أكاديمي"
-    }
+    },
+    "see_all": "مشاهدة كل المشاريع",
+    "show_featured": "مشاهدة المشاريع المميزة"
   },
   "skills": {
     "title": "المهارات التقنية"
