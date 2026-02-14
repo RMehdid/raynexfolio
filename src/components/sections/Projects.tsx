@@ -138,8 +138,7 @@ export const Projects: React.FC = () => {
     }
   ];
 
-  // Temporarily just showing all for data commit
-  const displayedProjects = projects;
+  const displayedProjects = showAll ? projects : projects.slice(0, 3);
 
   return (
     <section id="projects" className="py-24 px-6 relative">
@@ -157,52 +156,78 @@ export const Projects: React.FC = () => {
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {displayedProjects.map((project, idx) => (
-            <motion.div
-              key={project.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
-              className="group glass rounded-[2rem] overflow-hidden hover:border-primary/50 transition-all flex flex-col"
-            >
-              <div className="relative h-64 overflow-hidden">
-                <div className="absolute top-4 right-4 z-20 px-3 py-1 rounded-full bg-primary/20 backdrop-blur-md border border-primary/20 text-[10px] font-bold uppercase tracking-wider text-primary shadow-glow">
-                  {t(`projects.types.${project.type}`)}
-                </div>
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full group-hover:scale-110 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6 flex flex-wrap gap-2">
-                  {project.tags.map((tag, i) => (
-                    <span key={i} className="px-3 py-1 rounded-full bg-white/10 backdrop-blur-md text-[10px] font-bold uppercase tracking-wider">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              <div className="p-8 flex-1 flex flex-col">
-                <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">{project.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-8 flex-1">
-                  {project.description}
-                </p>
-
-                <div className="flex items-center justify-between pt-6 border-t border-white/5 mt-auto">
-                  <a href={project.link} className="flex items-center gap-2 text-sm font-bold hover:text-primary transition-all">
-                    {t('projects.view_project')} <ExternalLink size={16} />
-                  </a>
-                  <div className="flex gap-4">
-                    <a href="#" className="p-2 hover:text-primary transition-all"><Github size={18} /></a>
+          <AnimatePresence mode="popLayout">
+            {displayedProjects.map((project, idx) => (
+              <motion.div
+                key={project.title}
+                layout
+                initial={{ opacity: 0, scale: 0.9, y: 30 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.9, y: 30 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: idx * 0.05 }}
+                className="group glass rounded-[2rem] overflow-hidden hover:border-primary/50 transition-all flex flex-col"
+              >
+                <div className="relative h-64 overflow-hidden">
+                  {/* Project Type Badge */}
+                  <div className="absolute top-4 right-4 z-20 px-3 py-1 rounded-full bg-primary/20 backdrop-blur-md border border-primary/20 text-[10px] font-bold uppercase tracking-wider text-primary shadow-glow">
+                    {t(`projects.types.${project.type}`)}
+                  </div>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
+                  <div className="absolute bottom-6 left-6 right-6 flex flex-wrap gap-2">
+                    {project.tags.map((tag, i) => (
+                      <span key={i} className="px-3 py-1 rounded-full bg-white/10 backdrop-blur-md text-[10px] font-bold uppercase tracking-wider">
+                        {tag}
+                      </span>
+                    ))}
                   </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
+
+                <div className="p-8 flex-1 flex flex-col">
+                  <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors">{project.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-8 flex-1">
+                    {project.description}
+                  </p>
+
+                  <div className="flex items-center justify-between pt-6 border-t border-white/5 mt-auto">
+                    <a href={project.link} className="flex items-center gap-2 text-sm font-bold hover:text-primary transition-all">
+                      {t('projects.view_project')} <ExternalLink size={16} />
+                    </a>
+                    <div className="flex gap-4">
+                      <a href="#" className="p-2 hover:text-primary transition-all"><Github size={18} /></a>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="flex justify-center"
+        >
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="group flex items-center gap-3 bg-white/5 hover:bg-primary/10 border border-white/10 hover:border-primary/50 px-8 py-4 rounded-2xl font-bold transition-all"
+          >
+            {showAll ? (
+              <>
+                {t('projects.show_featured')} <ArrowUp size={20} className="group-hover:-translate-y-1 transition-transform" />
+              </>
+            ) : (
+              <>
+                {t('projects.see_all')} <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              </>
+            )}
+          </button>
+        </motion.div>
       </div>
     </section>
   );
