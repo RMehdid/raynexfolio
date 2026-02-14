@@ -38,7 +38,7 @@ export const Projects: React.FC = () => {
       image: "public/CageLight.jpeg",
       tags: ["Machine Learning", "Python", "YOLO11", "Computer Vision"],
       type: "academic",
-      link: "#"
+      link: "https://huggingface.co/ray96nex/yolo-athletic-pose-estimation"
     },
     {
       title: "Culterra",
@@ -46,7 +46,7 @@ export const Projects: React.FC = () => {
       image: "public/Culterra.jpeg",
       tags: ["Flutter", "Firebase", "Cross-platform", "Figma"],
       type: "academic",
-      link: "#"
+      link: "https://github.com/THA-Culterra/flutter-app"
     },
     {
       title: "Pyramid Firmenkontaktmesse",
@@ -54,7 +54,7 @@ export const Projects: React.FC = () => {
       image: "public/Pyramid.jpeg",
       tags: ["Vue.js", "Web Development", "Agile", "Vuex"],
       type: "professional",
-      link: "#"
+      link: "https://pyramid.tha.de/"
     },
     {
       title: "Weelz",
@@ -62,7 +62,7 @@ export const Projects: React.FC = () => {
       image: "public/Weelz.jpeg",
       tags: ["OOP", "MongoDB", "Swift", "Backend"],
       type: "personal",
-      link: "#"
+      link: "https://github.com/RMehdid/Weelz"
     },
     {
       title: "iDrive",
@@ -70,7 +70,7 @@ export const Projects: React.FC = () => {
       image: "public/iDrive.jpeg",
       tags: ["Design Patterns", "Swift", "CoreLocation", "iOS"],
       type: "personal",
-      link: "#"
+      link: "https://github.com/RMehdid/iDrive"
     },
     {
       title: "Cenify",
@@ -78,7 +78,7 @@ export const Projects: React.FC = () => {
       image: "public/Cenify.png",
       tags: ["MVVM", "Swift", "IMDb API", "iOS"],
       type: "personal",
-      link: "#"
+      link: "https://github.com/RMehdid/Cenify"
     },
     {
       title: "MyThesis",
@@ -86,7 +86,7 @@ export const Projects: React.FC = () => {
       image: "public/MyThesis.jpeg",
       tags: ["Java", "Java Swing", "HCI", "UX"],
       type: "academic",
-      link: "#"
+      link: "https://github.com/RMehdid/MyThesis"
     },
     {
       title: "iVape",
@@ -94,7 +94,7 @@ export const Projects: React.FC = () => {
       image: "public/iVape.png",
       tags: ["SwiftUI", "Firebase", "eCommerce", "iOS"],
       type: "personal",
-      link: "#"
+      link: "https://github.com/RMehdid/iVape"
     },
     {
       title: "Little Lemon App",
@@ -102,7 +102,7 @@ export const Projects: React.FC = () => {
       image: "public/little-lemon.png",
       tags: ["SwiftUI", "Swift", "Core Data", "API"],
       type: "academic",
-      link: "#"
+      link: "https://github.com/RMehdid/little-lemon-app"
     },
     {
       title: "ParallaxKit",
@@ -110,7 +110,7 @@ export const Projects: React.FC = () => {
       image: "public/parallax.png",
       tags: ["Dependency Injection", "Swift", "Library", "Animations"],
       type: "personal",
-      link: "#"
+      link: "https://github.com/RMehdid/ParallaxKit"
     },
     {
       title: "SwipableButton",
@@ -118,7 +118,7 @@ export const Projects: React.FC = () => {
       image: "public/swipable-button.png",
       tags: ["SwiftUI", "Reusable Component", "Animations", "UI/UX"],
       type: "professional",
-      link: "#"
+      link: "https://github.com/RMehdid/SwipableButton"
     }
   ];
 
@@ -177,7 +177,6 @@ export const Projects: React.FC = () => {
                   <p className="text-muted-foreground text-sm leading-relaxed mb-8 flex-1">
                     {project.description}
                   </p>
-
                   <div className="flex items-center justify-between pt-6 border-t border-white/5 mt-auto">
                     <a href={project.link} className="flex items-center gap-2 text-sm font-bold hover:text-primary transition-all">
                       {t('projects.view_project')} <ExternalLink size={16} />
