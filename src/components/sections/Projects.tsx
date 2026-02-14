@@ -62,6 +62,10 @@ export const Projects: React.FC = () => {
               className="group glass rounded-[2rem] overflow-hidden hover:border-primary/50 transition-all flex flex-col"
             >
               <div className="relative h-64 overflow-hidden">
+                {/* Project Type Badge */}
+                <div className="absolute top-4 right-4 z-20 px-3 py-1 rounded-full bg-primary/20 backdrop-blur-md border border-primary/20 text-[10px] font-bold uppercase tracking-wider text-primary shadow-glow">
+                  {t(`projects.types.${project.type}`)}
+                </div>
                 <img
                   src={project.image}
                   alt={project.title}
