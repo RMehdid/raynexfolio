@@ -83,10 +83,10 @@ export const Certificates: React.FC = () => {
             >
               <div>
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/20 backdrop-blur-md border border-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform shadow-glow hover:animate-glow">
                     <Award size={24} />
                   </div>
-                  <div className="w-12 h-12 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 flex items-center justify-center overflow-hidden p-2 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/20 backdrop-blur-md border border-primary/20 flex items-center justify-center overflow-hidden p-2 group-hover:scale-110 transition-transform shadow-glow hover:animate-glow">
                     <img src={cert.logo} alt={cert.issuer} className="w-full h-full object-contain" />
                   </div>
                 </div>
