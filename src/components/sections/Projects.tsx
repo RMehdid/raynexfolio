@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
-import { ExternalLink, Github, ArrowRight } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ExternalLink, Github, ArrowRight, ArrowUp } from 'lucide-react';
 
 export const Projects: React.FC = () => {
   const { t } = useTranslation();
+  const [showAll, setShowAll] = useState(false);
 
   const projects = [
     {
@@ -25,13 +26,120 @@ export const Projects: React.FC = () => {
     },
     {
       title: "Arbin",
-      description: "two High-growth mobile application that gained over 10,000 users in its first week. Focused on performance and user retention.",
+      description: "High-growth mobile application that gained over 10,000 users in its first week. Focused on performance and user retention.",
       image: "public/arbin.png",
       tags: ["Swift", "Websockets", "iOS", "User Location", "Firebase", "REST APIs"],
       type: "professional",
       link: "#"
+    },
+    {
+      title: "CageLight",
+      description: "University project with FC Augsburg. ML model (YOLO11n) for player sprint assessment and scoring.",
+      image: "public/cagelight.png",
+      tags: ["Machine Learning", "Python", "YOLO11", "Computer Vision"],
+      type: "academic",
+      link: "#"
+    },
+    {
+      title: "Culterra",
+      description: "Interactive mobile app for cultural insights, offering authentic, locally-sourced information to explore cultures worldwide.",
+      image: "public/culterra.png",
+      tags: ["Flutter", "Firebase", "Cross-platform", "Figma"],
+      type: "academic",
+      link: "#"
+    },
+    {
+      title: "Pyramid Firmenkontaktmesse",
+      description: "Official web portal for one of Germany’s largest career fairs. Built responsive Vue.js components and job board.",
+      image: "public/pyramid.png",
+      tags: ["Vue.js", "Web Development", "Agile", "Vuex"],
+      type: "professional",
+      link: "#"
+    },
+    {
+      title: "Weelz",
+      description: "Cutting-edge car rental service application revolutionizing interaction between car owners and drivers.",
+      image: "public/weelz.png",
+      tags: ["OOP", "MongoDB", "Swift", "Backend"],
+      type: "personal",
+      link: "#"
+    },
+    {
+      title: "Arbin Driver",
+      description: "Professional driver application for the Arbin ecosystem, focused on efficiency and real-time navigation.",
+      image: "public/arbin-driver.png",
+      tags: ["Design Patterns", "Version Control", "Real-time", "iOS"],
+      type: "professional",
+      link: "#"
+    },
+    {
+      title: "Arbin Rider",
+      description: "Consumer-facing application for the Arbin ride-sharing service, featuring seamless booking and tracking.",
+      image: "public/arbin-rider.png",
+      tags: ["Design Patterns", "REST APIs", "MapKit", "iOS"],
+      type: "professional",
+      link: "#"
+    },
+    {
+      title: "iDrive",
+      description: "Car rental service application facilitating interaction between owners and drivers with proximity-based searches.",
+      image: "public/idrive.png",
+      tags: ["Design Patterns", "Swift", "CoreLocation", "iOS"],
+      type: "personal",
+      link: "#"
+    },
+    {
+      title: "Cenify",
+      description: "Feature-rich movie catalog app leveraging the IMDb API to explore and discover vast collections of films.",
+      image: "public/cenify.png",
+      tags: ["MVVM", "Swift", "IMDb API", "iOS"],
+      type: "personal",
+      link: "#"
+    },
+    {
+      title: "MyThesis",
+      description: "Human-Machine interaction project built using JavaSwing for academic thesis at Boumerdes University.",
+      image: "public/mythesis.png",
+      tags: ["Java", "Java Swing", "HCI", "UX"],
+      type: "academic",
+      link: "#"
+    },
+    {
+      title: "iVape",
+      description: "Vape Store iOS app with catalog details, sweetness levels, and a VG/PG calculator using Firebase.",
+      image: "public/ivape.png",
+      tags: ["SwiftUI", "Firebase", "eCommerce", "iOS"],
+      type: "personal",
+      link: "#"
+    },
+    {
+      title: "Little Lemon App",
+      description: "Mobile application for browsing dinner menu offerings, developed as part of the Meta iOS development course.",
+      image: "public/little-lemon.png",
+      tags: ["SwiftUI", "Swift", "Core Data", "API"],
+      type: "academic",
+      link: "#"
+    },
+    {
+      title: "ParallaxKit",
+      description: "Swift library for creating engaging parallax effects in iOS applications, focused on dependency injection.",
+      image: "public/parallaxkit.png",
+      tags: ["Dependency Injection", "Swift", "Library", "Animations"],
+      type: "personal",
+      link: "#"
+    },
+    {
+      title: "SwipableButton",
+      description: "Customizable SwiftUI slide button view for engaging unlock actions in iOS and macOS apps.",
+      image: "public/swipablebutton.png",
+      tags: ["SwiftUI", "Reusable Component", "Animations", "UI/UX"],
+      type: "professional",
+      link: "#"
     }
   ];
+
+  // Temporarily just showing all for data commit
+  const displayedProjects = projects;
 
   return (
     <section id="projects" className="py-24 px-6 relative">
@@ -46,15 +154,12 @@ export const Projects: React.FC = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-4">{t('projects.title')}</h2>
             <div className="w-20 h-1.5 bg-primary rounded-full" />
           </div>
-          <button className="flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all">
-            See all projects <ArrowRight size={20} />
-          </button>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {projects.map((project, idx) => (
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          {displayedProjects.map((project, idx) => (
             <motion.div
-              key={idx}
+              key={project.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -62,7 +167,6 @@ export const Projects: React.FC = () => {
               className="group glass rounded-[2rem] overflow-hidden hover:border-primary/50 transition-all flex flex-col"
             >
               <div className="relative h-64 overflow-hidden">
-                {/* Project Type Badge */}
                 <div className="absolute top-4 right-4 z-20 px-3 py-1 rounded-full bg-primary/20 backdrop-blur-md border border-primary/20 text-[10px] font-bold uppercase tracking-wider text-primary shadow-glow">
                   {t(`projects.types.${project.type}`)}
                 </div>
