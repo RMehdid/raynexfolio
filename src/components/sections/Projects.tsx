@@ -10,7 +10,7 @@ export const Projects: React.FC = () => {
   const projects = [
     {
       title: "FlowRadar",
-      description: "A comprehensive dashboard for tracking Jira metrics, built during the Adesso SE internship to meet specific client requirements.",
+      description: t('projects.items.FlowRadar.description'),
       image: "public/adesso.png",
       tags: ["Angular", "Data Visualization", "API Integration"],
       type: "professional",
@@ -18,7 +18,7 @@ export const Projects: React.FC = () => {
     },
     {
       title: "Yassir",
-      description: "Server-independent iOS application using MongoDB Device-Sync, reducing server load by 40% and improving offline capabilities.",
+      description: t('projects.items.Yassir.description'),
       image: "public/yassir.png",
       tags: ["SwiftUI", "MongoDB", "Device-Sync", "iOS"],
       type: "professional",
@@ -26,7 +26,7 @@ export const Projects: React.FC = () => {
     },
     {
       title: "Arbin",
-      description: "High-growth mobile application that gained over 10,000 users in its first week. Focused on performance and user retention.",
+      description: t('projects.items.Arbin.description'),
       image: "public/arbin.png",
       tags: ["Swift", "Websockets", "iOS", "User Location", "Firebase", "REST APIs"],
       type: "professional",
@@ -34,7 +34,7 @@ export const Projects: React.FC = () => {
     },
     {
       title: "CageLight",
-      description: "University project with FC Augsburg. ML model (YOLO11n) for player sprint assessment and scoring.",
+      description: t('projects.items.CageLight.description'),
       image: "public/CageLight.jpeg",
       tags: ["Machine Learning", "Python", "YOLO11", "Computer Vision"],
       type: "academic",
@@ -42,15 +42,15 @@ export const Projects: React.FC = () => {
     },
     {
       title: "Culterra",
-      description: "Interactive mobile app for cultural insights, offering authentic, locally-sourced information to explore cultures worldwide.",
+      description: t('projects.items.Culterra.description'),
       image: "public/Culterra.jpeg",
       tags: ["Flutter", "Firebase", "Cross-platform", "Figma"],
       type: "academic",
       link: "https://github.com/THA-Culterra/flutter-app"
     },
     {
-      title: "Pyramid Firmenkontaktmesse",
-      description: "Official web portal for one of Germany’s largest career fairs. Built responsive Vue.js components and job board.",
+      title: t('projects.items.Pyramid.title'),
+      description: t('projects.items.Pyramid.description'),
       image: "public/Pyramid.jpeg",
       tags: ["Vue.js", "Web Development", "Agile", "Vuex"],
       type: "professional",
@@ -58,7 +58,7 @@ export const Projects: React.FC = () => {
     },
     {
       title: "Weelz",
-      description: "Cutting-edge car rental service application revolutionizing interaction between car owners and drivers.",
+      description: t('projects.items.Weelz.description'),
       image: "public/Weelz.jpeg",
       tags: ["OOP", "MongoDB", "Swift", "Backend"],
       type: "personal",
@@ -66,7 +66,7 @@ export const Projects: React.FC = () => {
     },
     {
       title: "iDrive",
-      description: "Car rental service application facilitating interaction between owners and drivers with proximity-based searches.",
+      description: t('projects.items.iDrive.description'),
       image: "public/iDrive.jpeg",
       tags: ["Design Patterns", "Swift", "CoreLocation", "iOS"],
       type: "personal",
@@ -74,7 +74,7 @@ export const Projects: React.FC = () => {
     },
     {
       title: "Cenify",
-      description: "Feature-rich movie catalog app leveraging the IMDb API to explore and discover vast collections of films.",
+      description: t('projects.items.Cenify.description'),
       image: "public/Cenify.png",
       tags: ["MVVM", "Swift", "IMDb API", "iOS"],
       type: "personal",
@@ -82,7 +82,7 @@ export const Projects: React.FC = () => {
     },
     {
       title: "MyThesis",
-      description: "Human-Machine interaction project built using JavaSwing for academic thesis at Boumerdes University.",
+      description: t('projects.items.MyThesis.description'),
       image: "public/MyThesis.jpeg",
       tags: ["Java", "Java Swing", "HCI", "UX"],
       type: "academic",
@@ -90,15 +90,15 @@ export const Projects: React.FC = () => {
     },
     {
       title: "iVape",
-      description: "Vape Store iOS app with catalog details, sweetness levels, and a VG/PG calculator using Firebase.",
+      description: t('projects.items.iVape.description'),
       image: "public/iVape.png",
       tags: ["SwiftUI", "Firebase", "eCommerce", "iOS"],
       type: "personal",
       link: "https://github.com/RMehdid/iVape"
     },
     {
-      title: "Little Lemon App",
-      description: "Mobile application for browsing dinner menu offerings, developed as part of the Meta iOS development course.",
+      title: t('projects.items.LittleLemon.title'),
+      description: t('projects.items.LittleLemon.description'),
       image: "public/little-lemon.png",
       tags: ["SwiftUI", "Swift", "Core Data", "API"],
       type: "academic",
@@ -106,7 +106,7 @@ export const Projects: React.FC = () => {
     },
     {
       title: "ParallaxKit",
-      description: "Swift library for creating engaging parallax effects in iOS applications, focused on dependency injection.",
+      description: t('projects.items.ParallaxKit.description'),
       image: "public/parallax.png",
       tags: ["Dependency Injection", "Swift", "Library", "Animations"],
       type: "personal",
@@ -114,7 +114,7 @@ export const Projects: React.FC = () => {
     },
     {
       title: "SwipableButton",
-      description: "Customizable SwiftUI slide button view for engaging unlock actions in iOS and macOS apps.",
+      description: t('projects.items.SwipableButton.description'),
       image: "public/swipable-button.png",
       tags: ["SwiftUI", "Reusable Component", "Animations", "UI/UX"],
       type: "professional",
