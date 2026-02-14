@@ -14,7 +14,7 @@ export const Projects: React.FC = () => {
       image: "public/adesso.png",
       tags: ["Angular", "Data Visualization", "API Integration"],
       type: "professional",
-      link: "#"
+      link: null
     },
     {
       title: "Yassir",
@@ -22,7 +22,7 @@ export const Projects: React.FC = () => {
       image: "public/yassir.png",
       tags: ["SwiftUI", "MongoDB", "Device-Sync", "iOS"],
       type: "professional",
-      link: "#"
+      link: null
     },
     {
       title: "Arbin",
@@ -30,7 +30,7 @@ export const Projects: React.FC = () => {
       image: "public/arbin.png",
       tags: ["Swift", "Websockets", "iOS", "User Location", "Firebase", "REST APIs"],
       type: "professional",
-      link: "#"
+      link: null
     },
     {
       title: "CageLight",
