@@ -177,14 +177,16 @@ export const Projects: React.FC = () => {
                   <p className="text-muted-foreground text-sm leading-relaxed mb-8 flex-1">
                     {project.description}
                   </p>
-                  <div className="flex items-center justify-between pt-6 border-t border-white/5 mt-auto">
-                    <a href={project.link} className="flex items-center gap-2 text-sm font-bold hover:text-primary transition-all">
-                      {t('projects.view_project')} <ExternalLink size={16} />
-                    </a>
-                    <div className="flex gap-4">
-                      <a href="#" className="p-2 hover:text-primary transition-all"><Github size={18} /></a>
+                  {project.link && (
+                    <div className="flex items-center justify-between pt-6 border-t border-white/5 mt-auto">
+                      <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-bold hover:text-primary transition-all">
+                        {t('projects.view_project')} <ExternalLink size={16} />
+                      </a>
+                      <div className="flex gap-4">
+                        <a href="#" className="p-2 hover:text-primary transition-all"><Github size={18} /></a>
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </motion.div>
             ))}
