@@ -11,7 +11,7 @@ export const Experience: React.FC = () => {
       company: "Adesso SE",
       role: t('experience.intern'),
       period: "Sep 2025 - Mar 2027",
-      location: "Germany",
+      location: "Munich, Germany",
       description: [
         "Rotation program, initiated a project from discovery to delivery",
         "Collaborated with a team of interns to deliver an ext Jira Metrics dashboard with specific client requirements"
@@ -21,7 +21,7 @@ export const Experience: React.FC = () => {
       company: "Yassir Inc. (YC20)",
       role: t('experience.associate'),
       period: "Feb 2024 - May 2024",
-      location: "Remote",
+      location: "Algiers, Algeria",
       description: [
         "Developed a server-independent iOS app using MongoDB Device-Sync, reducing server load by 40%",
         "Balanced feature development and maintenance of native iOS modules for cross-platform apps"
@@ -31,7 +31,7 @@ export const Experience: React.FC = () => {
       company: "SARL Arbin",
       role: t('experience.developer'),
       period: "Jul 2022 - Feb 2024",
-      location: "Algeria",
+      location: "Algiers, Algeria",
       description: [
         "Developed a startup app, gaining 10,000 users in the first week",
         "Collaborated with Product team to add 5+ features, boosting user retention by 18%"
