@@ -10,32 +10,23 @@ export const Experience: React.FC = () => {
     {
       company: "Adesso SE",
       role: t('experience.intern'),
-      period: "Sep 2025 - Mar 2027",
-      location: "Munich, Germany",
-      description: [
-        "Rotation program, initiated a project from discovery to delivery",
-        "Collaborated with a team of interns to deliver an ext Jira Metrics dashboard with specific client requirements"
-      ]
+      period: t('experience.items.adesso.period'),
+      location: t('experience.items.adesso.location'),
+      description: t('experience.items.adesso.description', { returnObjects: true }) as string[]
     },
     {
       company: "Yassir Inc. (YC20)",
       role: t('experience.associate'),
-      period: "Feb 2024 - May 2024",
-      location: "Algiers, Algeria",
-      description: [
-        "Developed a server-independent iOS app using MongoDB Device-Sync, reducing server load by 40%",
-        "Balanced feature development and maintenance of native iOS modules for cross-platform apps"
-      ]
+      period: t('experience.items.yassir.period'),
+      location: t('experience.items.yassir.location'),
+      description: t('experience.items.yassir.description', { returnObjects: true }) as string[]
     },
     {
       company: "SARL Arbin",
       role: t('experience.developer'),
-      period: "Jul 2022 - Feb 2024",
-      location: "Algiers, Algeria",
-      description: [
-        "Developed a startup app, gaining 10,000 users in the first week",
-        "Collaborated with Product team to add 5+ features, boosting user retention by 18%"
-      ]
+      period: t('experience.items.arbin.period'),
+      location: t('experience.items.arbin.location'),
+      description: t('experience.items.arbin.description', { returnObjects: true }) as string[]
     }
   ];
 
