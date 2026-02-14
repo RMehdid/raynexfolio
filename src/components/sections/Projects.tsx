@@ -11,7 +11,7 @@ export const Projects: React.FC = () => {
     {
       title: "FlowRadar",
       description: t('projects.items.FlowRadar.description'),
-      image: "/adesso.png",
+      image: "./adesso.png",
       tags: ["Angular", "Data Visualization", "API Integration"],
       type: "professional",
       link: null
@@ -19,7 +19,7 @@ export const Projects: React.FC = () => {
     {
       title: "Yassir",
       description: t('projects.items.Yassir.description'),
-      image: "/yassir.png",
+      image: "./yassir.png",
       tags: ["SwiftUI", "MongoDB", "Device-Sync", "iOS"],
       type: "professional",
       link: null
@@ -27,7 +27,7 @@ export const Projects: React.FC = () => {
     {
       title: "Arbin",
       description: t('projects.items.Arbin.description'),
-      image: "/arbin.png",
+      image: "./arbin.png",
       tags: ["Swift", "Websockets", "iOS", "User Location", "Firebase", "REST APIs"],
       type: "professional",
       link: null
@@ -35,7 +35,7 @@ export const Projects: React.FC = () => {
     {
       title: "CageLight",
       description: t('projects.items.CageLight.description'),
-      image: "/CageLight.jpeg",
+      image: "./CageLight.jpeg",
       tags: ["Machine Learning", "Python", "YOLO11", "Computer Vision"],
       type: "academic",
       link: "https://huggingface.co/ray96nex/yolo-athletic-pose-estimation"
@@ -43,7 +43,7 @@ export const Projects: React.FC = () => {
     {
       title: "Culterra",
       description: t('projects.items.Culterra.description'),
-      image: "/Culterra.jpeg",
+      image: "./Culterra.jpeg",
       tags: ["Flutter", "Firebase", "Cross-platform", "Figma"],
       type: "academic",
       link: "https://github.com/THA-Culterra/flutter-app"
@@ -51,7 +51,7 @@ export const Projects: React.FC = () => {
     {
       title: t('projects.items.Pyramid.title'),
       description: t('projects.items.Pyramid.description'),
-      image: "/Pyramid.jpeg",
+      image: "./Pyramid.jpeg",
       tags: ["Vue.js", "Web Development", "Agile", "Vuex"],
       type: "professional",
       link: "https://pyramid.tha.de/"
@@ -59,7 +59,7 @@ export const Projects: React.FC = () => {
     {
       title: "Weelz",
       description: t('projects.items.Weelz.description'),
-      image: "/Weelz.jpeg",
+      image: "./Weelz.jpeg",
       tags: ["OOP", "MongoDB", "Swift", "Backend"],
       type: "personal",
       link: "https://github.com/RMehdid/Weelz"
@@ -67,7 +67,7 @@ export const Projects: React.FC = () => {
     {
       title: "iDrive",
       description: t('projects.items.iDrive.description'),
-      image: "/iDrive.jpeg",
+      image: "./iDrive.jpeg",
       tags: ["Design Patterns", "Swift", "CoreLocation", "iOS"],
       type: "personal",
       link: "https://github.com/RMehdid/iDrive"
@@ -75,7 +75,7 @@ export const Projects: React.FC = () => {
     {
       title: "Cenify",
       description: t('projects.items.Cenify.description'),
-      image: "/Cenify.png",
+      image: "./Cenify.png",
       tags: ["MVVM", "Swift", "IMDb API", "iOS"],
       type: "personal",
       link: "https://github.com/RMehdid/Cenify"
@@ -83,7 +83,7 @@ export const Projects: React.FC = () => {
     {
       title: "MyThesis",
       description: t('projects.items.MyThesis.description'),
-      image: "/MyThesis.jpeg",
+      image: "./MyThesis.jpeg",
       tags: ["Java", "Java Swing", "HCI", "UX"],
       type: "academic",
       link: "https://github.com/RMehdid/MyThesis"
@@ -91,7 +91,7 @@ export const Projects: React.FC = () => {
     {
       title: "iVape",
       description: t('projects.items.iVape.description'),
-      image: "/iVape.png",
+      image: "./iVape.png",
       tags: ["SwiftUI", "Firebase", "eCommerce", "iOS"],
       type: "personal",
       link: "https://github.com/RMehdid/iVape"
@@ -99,7 +99,7 @@ export const Projects: React.FC = () => {
     {
       title: t('projects.items.LittleLemon.title'),
       description: t('projects.items.LittleLemon.description'),
-      image: "/little-lemon.png",
+      image: "./little-lemon.png",
       tags: ["SwiftUI", "Swift", "Core Data", "API"],
       type: "academic",
       link: "https://github.com/RMehdid/little-lemon-app"
@@ -107,7 +107,7 @@ export const Projects: React.FC = () => {
     {
       title: "ParallaxKit",
       description: t('projects.items.ParallaxKit.description'),
-      image: "/parallax.png",
+      image: "./parallax.png",
       tags: ["Dependency Injection", "Swift", "Library", "Animations"],
       type: "personal",
       link: "https://github.com/RMehdid/ParallaxKit"
@@ -115,7 +115,7 @@ export const Projects: React.FC = () => {
     {
       title: "SwipableButton",
       description: t('projects.items.SwipableButton.description'),
-      image: "/swipable-button.png",
+      image: "./swipable-button.png",
       tags: ["SwiftUI", "Reusable Component", "Animations", "UI/UX"],
       type: "professional",
       link: "https://github.com/RMehdid/SwipableButton"
