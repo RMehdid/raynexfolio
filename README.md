@@ -2,7 +2,7 @@
 
 A premium, high-performance portfolio website built with React, TypeScript, and Tailwind CSS. Featuring a refined glassmorphism design, multi-language support (English, Arabic, German, French), and a focus on visual excellence and meaningful interactions.
 
-![Portfolio Preview](public/profile-pic.jpg)
+<img src="./public/profile-pic.jpg" width="200" />
 
 ## 🚀 Key Features
 
